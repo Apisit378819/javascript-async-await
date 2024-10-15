@@ -33,3 +33,21 @@ let getJohnOrders = () => {
 };
 
 // Start coding here
+// getJohnProfile().then((data) => {
+//   console.log(data)
+// }).then(getJohnOrders().then((order) => {
+//   console.log(order)
+// }))
+
+async function newFunction() {
+  try {
+    const data1 = await getJohnProfile()
+    const data2 = await getJohnOrders()
+    console.log(data1)
+    console.log(data2)
+  }catch (e){
+    console.log(e)
+  }
+}
+
+newFunction()

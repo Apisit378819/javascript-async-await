@@ -12,3 +12,18 @@ let getJohnProfile = () => {
   });
 };
 // Start coding here
+// getJohnProfile().then((promise) => {
+//   console.log(promise)
+// }).catch ((e) => {
+//   console.log(e)
+// })
+
+async function newFunction () {
+  try {
+    const data = await getJohnProfile()
+    console.log(data)
+  }catch (e) {
+    console.log(e)
+  }
+}
+newFunction()

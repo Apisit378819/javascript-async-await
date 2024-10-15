@@ -13,3 +13,8 @@ let getJohnProfile = () => {
 };
 
 // Start coding here
+getJohnProfile().then((promise) => {
+  console.log(promise)
+}).catch ((e) => {
+  console.log(e)
+})
